@@ -1,0 +1,164 @@
+2024-11-18 22:35:25,674:INFO:logging configured by default settings
+2024-11-18 22:35:25,684:DEBUG:Checking if ExtractSalesData() is complete
+2024-11-18 22:35:25,684:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+2024-11-18 22:35:25,685:INFO:Done scheduling tasks
+2024-11-18 22:35:25,685:INFO:Running Worker with 1 processes
+2024-11-18 22:35:25,685:DEBUG:Asking scheduler for work...
+2024-11-18 22:35:25,685:DEBUG:Pending tasks: 1
+2024-11-18 22:35:25,685:INFO:[pid 6157] Worker Worker(salt=4388254261, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=6157) running   ExtractSalesData()
+2024-11-18 22:37:40,049:ERROR:Failed to fetch data: (psycopg2.OperationalError) connection to server at "5432" (0.0.21.56), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-18 22:37:40,050:INFO:[pid 6157] Worker Worker(salt=4388254261, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=6157) done      ExtractSalesData()
+2024-11-18 22:37:40,052:DEBUG:1 running tasks, waiting for next task to finish
+2024-11-18 22:37:40,053:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+2024-11-18 22:37:40,053:DEBUG:Asking scheduler for work...
+2024-11-18 22:37:40,054:DEBUG:Done
+2024-11-18 22:37:40,054:DEBUG:There are no more tasks to run at this time
+2024-11-18 22:37:40,055:INFO:Worker Worker(salt=4388254261, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=6157) was stopped. Shutting down Keep-Alive thread
+2024-11-18 22:37:40,057:INFO:
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 ExtractSalesData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-11-18 23:11:06,632:INFO:logging configured by default settings
+2024-11-18 23:11:06,643:DEBUG:Checking if ExtractSalesData() is complete
+2024-11-18 23:11:06,644:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+2024-11-18 23:11:06,644:INFO:Done scheduling tasks
+2024-11-18 23:11:06,644:INFO:Running Worker with 1 processes
+2024-11-18 23:11:06,645:DEBUG:Asking scheduler for work...
+2024-11-18 23:11:06,645:DEBUG:Pending tasks: 1
+2024-11-18 23:11:06,645:INFO:[pid 9188] Worker Worker(salt=6498170152, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=9188) running   ExtractSalesData()
+2024-11-18 23:13:22,258:ERROR:Failed to fetch data: (psycopg2.OperationalError) connection to server at "5432" (0.0.21.56), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-18 23:13:22,259:INFO:[pid 9188] Worker Worker(salt=6498170152, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=9188) done      ExtractSalesData()
+2024-11-18 23:13:22,262:DEBUG:1 running tasks, waiting for next task to finish
+2024-11-18 23:13:22,265:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+2024-11-18 23:13:22,266:DEBUG:Asking scheduler for work...
+2024-11-18 23:13:22,269:DEBUG:Done
+2024-11-18 23:13:22,270:DEBUG:There are no more tasks to run at this time
+2024-11-18 23:13:22,272:INFO:Worker Worker(salt=6498170152, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=9188) was stopped. Shutting down Keep-Alive thread
+2024-11-18 23:13:22,276:INFO:
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 ExtractSalesData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-11-18 23:22:06,708:INFO:logging configured by default settings
+2024-11-18 23:22:06,718:DEBUG:Checking if ExtractSalesData() is complete
+2024-11-18 23:22:06,719:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+2024-11-18 23:22:06,719:INFO:Done scheduling tasks
+2024-11-18 23:22:06,719:INFO:Running Worker with 1 processes
+2024-11-18 23:22:06,719:DEBUG:Asking scheduler for work...
+2024-11-18 23:22:06,719:DEBUG:Pending tasks: 1
+2024-11-18 23:22:06,719:INFO:[pid 10704] Worker Worker(salt=8274229272, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10704) running   ExtractSalesData()
+2024-11-18 23:24:21,713:ERROR:Failed to fetch data: (psycopg2.OperationalError) connection to server at "5432" (0.0.21.56), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-18 23:24:21,714:INFO:[pid 10704] Worker Worker(salt=8274229272, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10704) done      ExtractSalesData()
+2024-11-18 23:24:21,716:DEBUG:1 running tasks, waiting for next task to finish
+2024-11-18 23:24:21,719:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+2024-11-18 23:24:21,720:DEBUG:Asking scheduler for work...
+2024-11-18 23:24:21,721:DEBUG:Done
+2024-11-18 23:24:21,721:DEBUG:There are no more tasks to run at this time
+2024-11-18 23:24:21,722:INFO:Worker Worker(salt=8274229272, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10704) was stopped. Shutting down Keep-Alive thread
+2024-11-18 23:24:21,726:INFO:
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 ExtractSalesData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-11-18 23:25:42,665:INFO:logging configured by default settings
+2024-11-18 23:25:42,675:DEBUG:Checking if ExtractSalesData() is complete
+2024-11-18 23:25:42,676:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+2024-11-18 23:25:42,676:INFO:Done scheduling tasks
+2024-11-18 23:25:42,676:INFO:Running Worker with 1 processes
+2024-11-18 23:25:42,677:DEBUG:Asking scheduler for work...
+2024-11-18 23:25:42,677:DEBUG:Pending tasks: 1
+2024-11-18 23:25:42,677:INFO:[pid 11417] Worker Worker(salt=8376612512, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11417) running   ExtractSalesData()
+2024-11-18 23:27:58,802:ERROR:Failed to fetch data: (psycopg2.OperationalError) connection to server at "5432" (0.0.21.56), port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-18 23:27:58,802:INFO:[pid 11417] Worker Worker(salt=8376612512, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11417) done      ExtractSalesData()
+2024-11-18 23:27:58,805:DEBUG:1 running tasks, waiting for next task to finish
+2024-11-18 23:27:58,807:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+2024-11-18 23:27:58,807:DEBUG:Asking scheduler for work...
+2024-11-18 23:27:58,808:DEBUG:Done
+2024-11-18 23:27:58,808:DEBUG:There are no more tasks to run at this time
+2024-11-18 23:27:58,809:INFO:Worker Worker(salt=8376612512, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11417) was stopped. Shutting down Keep-Alive thread
+2024-11-18 23:27:58,813:INFO:
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 ExtractSalesData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-11-18 23:37:33,709:INFO:logging configured by default settings
+2024-11-18 23:37:33,720:DEBUG:Checking if ExtractSalesData() is complete
+2024-11-18 23:37:33,721:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+2024-11-18 23:37:33,721:INFO:Done scheduling tasks
+2024-11-18 23:37:33,721:INFO:Running Worker with 1 processes
+2024-11-18 23:37:33,722:DEBUG:Asking scheduler for work...
+2024-11-18 23:37:33,722:DEBUG:Pending tasks: 1
+2024-11-18 23:37:33,722:INFO:[pid 14195] Worker Worker(salt=4317709048, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14195) running   ExtractSalesData()
+2024-11-18 23:37:36,366:INFO:Successfully fetched data from database
+2024-11-18 23:37:36,398:INFO:[pid 14195] Worker Worker(salt=4317709048, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14195) done      ExtractSalesData()
+2024-11-18 23:37:36,399:DEBUG:1 running tasks, waiting for next task to finish
+2024-11-18 23:37:36,400:INFO:Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+2024-11-18 23:37:36,400:DEBUG:Asking scheduler for work...
+2024-11-18 23:37:36,400:DEBUG:Done
+2024-11-18 23:37:36,400:DEBUG:There are no more tasks to run at this time
+2024-11-18 23:37:36,400:INFO:Worker Worker(salt=4317709048, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14195) was stopped. Shutting down Keep-Alive thread
+2024-11-18 23:37:36,401:INFO:
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 ExtractSalesData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+Luigi started at 24/11/2024 00:18:02
+Luigi started at 24/11/2024 00:19:32
+Luigi started at 24/11/2024 00:19:47
+Luigi started at 24/11/2024 00:20:03
+Luigi started at 24/11/2024 00:21:34
+Luigi started at 24/11/2024 00:36:19
+Luigi started at 24/11/2024 16:37:04
+Luigi started at 24/11/2024 16:53:31
+Luigi started at 24/11/2024 16:58:37
+Luigi started at 24/11/2024 16:59:13
+Luigi started at 24/11/2024 17:07:01
+Luigi started at 24/11/2024 17:10:40
+Luigi started at 24/11/2024 17:15:25
+Luigi started at 24/11/2024 17:26:20
+Luigi started at 24/11/2024 17:29:10
+Luigi started at 24/11/2024 17:32:49
+Luigi started at 24/11/2024 17:41:43

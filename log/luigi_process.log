@@ -1,0 +1,1820 @@
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) running   ExtractCryptoData()
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) running   ExtractSalesData()
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) running   ExtractMarketingData()
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) running   ValidationData()
+ERROR: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) running   ValidationData()
+ERROR: [pid 27135] Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=7396586654, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27135) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) running   ExtractSalesData()
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) running   ExtractMarketingData()
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) running   ExtractCryptoData()
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) running   ValidationData()
+ERROR: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) running   ValidationData()
+ERROR: [pid 27433] Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=030913040, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27433) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) running   ExtractSalesData()
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) running   ExtractCryptoData()
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) running   ExtractMarketingData()
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) running   ValidationData()
+ERROR: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) running   ValidationData()
+ERROR: [pid 27521] Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=8929051208, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27521) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) running   ExtractSalesData()
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) running   ExtractCryptoData()
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) running   ExtractMarketingData()
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) running   ValidationData()
+ERROR: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) running   ValidationData()
+ERROR: [pid 27581] Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=1973535379, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27581) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) running   ExtractMarketingData()
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) running   ExtractSalesData()
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) running   ExtractCryptoData()
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) running   ValidationData()
+ERROR: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) running   ValidationData()
+ERROR: [pid 27865] Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=6360974441, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=27865) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) running   ExtractSalesData()
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) running   ExtractMarketingData()
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) running   ExtractCryptoData()
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) running   ValidationData()
+ERROR: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) running   ValidationData()
+ERROR: [pid 30155] Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=4258297915, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=30155) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ExtractSalesData() is complete
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) running   ExtractSalesData()
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) running   ExtractCryptoData()
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) running   ExtractMarketingData()
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) running   ValidationData()
+ERROR: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) running   ValidationData()
+ERROR: [pid 8197] Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=509480711, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=8197) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ExtractSalesData() is complete
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractMarketingData() is complete
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) running   ExtractSalesData()
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) running   ExtractMarketingData()
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) running   ExtractCryptoData()
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) running   ValidationData()
+ERROR: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) running   ValidationData()
+ERROR: [pid 10999] Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=2030864539, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=10999) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ExtractSalesData() is complete
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractMarketingData() is complete
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 4 pending tasks possibly being run by other workers
+DEBUG: There are 4 pending tasks unique to this worker
+DEBUG: There are 4 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=7829510709, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11787) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 4 were left pending, among these:
+    * 4 was not granted run permission by the scheduler:
+        - 1 ExtractCryptoData()
+        - 1 ExtractMarketingData()
+        - 1 ExtractSalesData()
+        - 1 ValidationData()
+
+Did not run any tasks
+This progress looks :| because there were tasks that were not granted run permission by the scheduler
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if ExtractSalesData() is complete
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractMarketingData() is complete
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) running   ExtractSalesData()
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) running   ExtractMarketingData()
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) running   ExtractCryptoData()
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) running   ValidationData()
+ERROR: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) running   ValidationData()
+ERROR: [pid 11901] Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=9804998705, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=11901) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) running   ExtractSalesData()
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) running   ExtractMarketingData()
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) running   ExtractCryptoData()
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) running   ValidationData()
+ERROR: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) running   ValidationData()
+ERROR: [pid 13191] Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=2727758056, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13191) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) running   ExtractSalesData()
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) running   ExtractMarketingData()
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) running   ExtractCryptoData()
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) running   ValidationData()
+ERROR: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) running   ValidationData()
+ERROR: [pid 13792] Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=5142846298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=13792) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) running   ExtractMarketingData()
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) running   ExtractSalesData()
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) running   ExtractCryptoData()
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) running   ValidationData()
+ERROR: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Checking if ValidationData() is complete
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) running   ValidationData()
+ERROR: [pid 14578] Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) failed    ValidationData()
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 188, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependencies at run time: ExtractSalesData__99914b932b, ExtractMarketingData__99914b932b, ExtractCryptoData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=525263328, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=14578) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 failed:
+    - 1 ValidationData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+Marketing data extraction complete.
+Sales data extraction complete.
+Crypto data extraction complete.
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) running   ExtractCryptoData()
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) running   ExtractSalesData()
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) running   ExtractMarketingData()
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) running   ValidationData()
+INFO: [pid 17149] Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) done      ValidationData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=6819898631, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17149) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 4 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+    - 1 ValidationData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+========== Start Pipeline Validation ==========
+
+In the data Sales there are 100892 rows and 10 columns
+
+Column name has data type object
+Column main_category has data type object
+Column sub_category has data type object
+Column image has data type object
+Column link has data type object
+Column ratings has data type object
+Column no_of_ratings has data type object
+Column discount_price has data type object
+Column actual_price has data type object
+Column Unnamed: 0 has data type float64
+
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns main_category has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns sub_category has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns image has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns link has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns ratings has percentages missing values 31.942076676049638 %
+
+========== End Pipeline Validation ==========
+Columns no_of_ratings has percentages missing values 31.942076676049638 %
+
+========== End Pipeline Validation ==========
+Columns discount_price has percentages missing values 11.067279863616541 %
+
+========== End Pipeline Validation ==========
+Columns actual_price has percentages missing values 3.1925226975379615 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 0 has percentages missing values 49.97224755183761 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Marketing there are 7249 rows and 31 columns
+
+Column id has data type object
+Column prices.amountMax has data type float64
+Column prices.amountMin has data type float64
+Column prices.availability has data type object
+Column prices.condition has data type object
+Column prices.currency has data type object
+Column prices.dateSeen has data type object
+Column prices.isSale has data type bool
+Column prices.merchant has data type object
+Column prices.shipping has data type object
+Column prices.sourceURLs has data type object
+Column asins has data type object
+Column brand has data type object
+Column categories has data type object
+Column dateAdded has data type object
+Column dateUpdated has data type object
+Column ean has data type object
+Column imageURLs has data type object
+Column keys has data type object
+Column manufacturer has data type object
+Column manufacturerNumber has data type object
+Column name has data type object
+Column primaryCategories has data type object
+Column sourceURLs has data type object
+Column upc has data type object
+Column weight has data type object
+Column Unnamed: 26 has data type object
+Column Unnamed: 27 has data type object
+Column Unnamed: 28 has data type float64
+Column Unnamed: 29 has data type object
+Column Unnamed: 30 has data type object
+
+Columns id has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.amountMax has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.amountMin has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.availability has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.condition has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.currency has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.dateSeen has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.isSale has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.merchant has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.shipping has percentages missing values 40.998758449441304 %
+
+========== End Pipeline Validation ==========
+Columns prices.sourceURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns asins has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns brand has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns categories has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns dateAdded has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns dateUpdated has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns ean has percentages missing values 78.71430542143744 %
+
+========== End Pipeline Validation ==========
+Columns imageURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns keys has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns manufacturer has percentages missing values 55.37315491791971 %
+
+========== End Pipeline Validation ==========
+Columns manufacturerNumber has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns primaryCategories has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns sourceURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns upc has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns weight has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 26 has percentages missing values 99.46199475789764 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 27 has percentages missing values 99.75168988826044 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 28 has percentages missing values 99.91722996275348 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 29 has percentages missing values 99.83445992550696 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 30 has percentages missing values 99.91722996275348 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Crypto there are 50 rows and 5 columns
+
+Column number has data type int64
+Column name has data type object
+Column price has data type object
+Column market_cap has data type object
+Column percentage_change_24h has data type object
+
+Columns number has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns price has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns market_cap has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns percentage_change_24h has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+WARNING: Will not run ExtractMarketingData() or any dependencies due to error in complete() method:
+Traceback (most recent call last):
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 434, in check_complete
+    is_complete = check_complete_cached(task, completion_cache)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py", line 419, in check_complete_cached
+    is_complete = task.complete()
+                  ^^^^^^^^^^^^^^^
+  File "/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/task.py", line 586, in complete
+    outputs = flatten(self.output())
+                      ^^^^^^^^^^^^^
+  File "/home/plato/Labs/de-stuff/fundamental-data-engineering-final-project/main.py", line 49, in output
+    f"data/extract/extract_marketing_data_{time.time_ns().csv}"
+                                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'csv'
+
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   UNKNOWN
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 17637] Worker Worker(salt=2234262518, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17637) running   ExtractCryptoData()
+INFO: [pid 17637] Worker Worker(salt=2234262518, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17637) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 17637] Worker Worker(salt=2234262518, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17637) running   ExtractSalesData()
+INFO: [pid 17637] Worker Worker(salt=2234262518, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17637) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=2234262518, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=17637) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 2 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractSalesData()
+* 1 failed scheduling:
+    - 1 ExtractMarketingData()
+* 1 were left pending, among these:
+    * 1 had dependencies whose scheduling failed:
+        - 1 ValidationData()
+
+This progress looks :( because there were tasks whose scheduling failed
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 4
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) running   ExtractCryptoData()
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) done      ExtractCryptoData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 3
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) running   ExtractSalesData()
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) done      ExtractSalesData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) running   ExtractMarketingData()
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) done      ExtractMarketingData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) running   ValidationData()
+INFO: [pid 18243] Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) done      ValidationData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=2655248298, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=18243) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 4 ran successfully:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+    - 1 ValidationData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+Data extract complete!!!
+========== Start Pipeline Validation ==========
+
+In the data Sales there are 100892 rows and 10 columns
+
+Column name has data type object
+Column main_category has data type object
+Column sub_category has data type object
+Column image has data type object
+Column link has data type object
+Column ratings has data type object
+Column no_of_ratings has data type object
+Column discount_price has data type object
+Column actual_price has data type object
+Column Unnamed: 0 has data type float64
+
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns main_category has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns sub_category has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns image has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns link has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns ratings has percentages missing values 31.942076676049638 %
+
+========== End Pipeline Validation ==========
+Columns no_of_ratings has percentages missing values 31.942076676049638 %
+
+========== End Pipeline Validation ==========
+Columns discount_price has percentages missing values 11.067279863616541 %
+
+========== End Pipeline Validation ==========
+Columns actual_price has percentages missing values 3.1925226975379615 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 0 has percentages missing values 49.97224755183761 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Marketing there are 7249 rows and 31 columns
+
+Column id has data type object
+Column prices.amountMax has data type float64
+Column prices.amountMin has data type float64
+Column prices.availability has data type object
+Column prices.condition has data type object
+Column prices.currency has data type object
+Column prices.dateSeen has data type object
+Column prices.isSale has data type bool
+Column prices.merchant has data type object
+Column prices.shipping has data type object
+Column prices.sourceURLs has data type object
+Column asins has data type object
+Column brand has data type object
+Column categories has data type object
+Column dateAdded has data type object
+Column dateUpdated has data type object
+Column ean has data type object
+Column imageURLs has data type object
+Column keys has data type object
+Column manufacturer has data type object
+Column manufacturerNumber has data type object
+Column name has data type object
+Column primaryCategories has data type object
+Column sourceURLs has data type object
+Column upc has data type object
+Column weight has data type object
+Column Unnamed: 26 has data type object
+Column Unnamed: 27 has data type object
+Column Unnamed: 28 has data type float64
+Column Unnamed: 29 has data type object
+Column Unnamed: 30 has data type object
+
+Columns id has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.amountMax has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.amountMin has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.availability has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.condition has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.currency has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.dateSeen has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.isSale has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.merchant has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns prices.shipping has percentages missing values 40.998758449441304 %
+
+========== End Pipeline Validation ==========
+Columns prices.sourceURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns asins has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns brand has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns categories has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns dateAdded has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns dateUpdated has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns ean has percentages missing values 78.71430542143744 %
+
+========== End Pipeline Validation ==========
+Columns imageURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns keys has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns manufacturer has percentages missing values 55.37315491791971 %
+
+========== End Pipeline Validation ==========
+Columns manufacturerNumber has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns primaryCategories has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns sourceURLs has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns upc has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns weight has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 26 has percentages missing values 99.46199475789764 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 27 has percentages missing values 99.75168988826044 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 28 has percentages missing values 99.91722996275348 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 29 has percentages missing values 99.83445992550696 %
+
+========== End Pipeline Validation ==========
+Columns Unnamed: 30 has percentages missing values 99.91722996275348 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Crypto there are 50 rows and 5 columns
+
+Column number has data type int64
+Column name has data type object
+Column price has data type object
+Column market_cap has data type object
+Column percentage_change_24h has data type object
+
+Columns number has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns name has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns price has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns market_cap has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+Columns percentage_change_24h has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
+DEBUG: Checking if ExtractSalesData() is complete
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+DEBUG: Checking if ExtractMarketingData() is complete
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+DEBUG: Checking if ValidationData() is complete
+/home/plato/miniconda3/envs/data-env/lib/python3.11/site-packages/luigi/worker.py:419: UserWarning: Task ValidationData() without outputs has no custom complete() method
+  is_complete = task.complete()
+DEBUG: Checking if ExtractSalesData() is complete
+DEBUG: Checking if ExtractMarketingData() is complete
+DEBUG: Checking if ExtractCryptoData() is complete
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractCryptoData__99914b932b   has status   DONE
+INFO: Informed scheduler that task   ExtractMarketingData__99914b932b   has status   DONE
+INFO: Informed scheduler that task   ExtractSalesData__99914b932b   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 19654] Worker Worker(salt=1161255480, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=19654) running   ValidationData()
+INFO: [pid 19654] Worker Worker(salt=1161255480, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=19654) done      ValidationData()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ValidationData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=1161255480, workers=1, host=plato-NBLB-WAX9N, username=plato, pid=19654) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 3 complete ones were encountered:
+    - 1 ExtractCryptoData()
+    - 1 ExtractMarketingData()
+    - 1 ExtractSalesData()
+* 1 ran successfully:
+    - 1 ValidationData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+========== Start Pipeline Validation ==========
+
+In the data Sales there are 100892 rows and 10 columns
+
+Column name has data type object
+Column main_category has data type object
+Column sub_category has data type object
+Column image has data type object
+Column link has data type object
+Column ratings has data type object
+Column no_of_ratings has data type object
+Column discount_price has data type object
+Column actual_price has data type object
+Column Unnamed: 0 has data type float64
+
+Columns name has percentages missing values 0.0 %
+
+Columns main_category has percentages missing values 0.0 %
+
+Columns sub_category has percentages missing values 0.0 %
+
+Columns image has percentages missing values 0.0 %
+
+Columns link has percentages missing values 0.0 %
+
+Columns ratings has percentages missing values 31.942076676049638 %
+
+Columns no_of_ratings has percentages missing values 31.942076676049638 %
+
+Columns discount_price has percentages missing values 11.067279863616541 %
+
+Columns actual_price has percentages missing values 3.1925226975379615 %
+
+Columns Unnamed: 0 has percentages missing values 49.97224755183761 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Marketing there are 7249 rows and 31 columns
+
+Column id has data type object
+Column prices.amountMax has data type float64
+Column prices.amountMin has data type float64
+Column prices.availability has data type object
+Column prices.condition has data type object
+Column prices.currency has data type object
+Column prices.dateSeen has data type object
+Column prices.isSale has data type bool
+Column prices.merchant has data type object
+Column prices.shipping has data type object
+Column prices.sourceURLs has data type object
+Column asins has data type object
+Column brand has data type object
+Column categories has data type object
+Column dateAdded has data type object
+Column dateUpdated has data type object
+Column ean has data type object
+Column imageURLs has data type object
+Column keys has data type object
+Column manufacturer has data type object
+Column manufacturerNumber has data type object
+Column name has data type object
+Column primaryCategories has data type object
+Column sourceURLs has data type object
+Column upc has data type object
+Column weight has data type object
+Column Unnamed: 26 has data type object
+Column Unnamed: 27 has data type object
+Column Unnamed: 28 has data type float64
+Column Unnamed: 29 has data type object
+Column Unnamed: 30 has data type object
+
+Columns id has percentages missing values 0.0 %
+
+Columns prices.amountMax has percentages missing values 0.0 %
+
+Columns prices.amountMin has percentages missing values 0.0 %
+
+Columns prices.availability has percentages missing values 0.0 %
+
+Columns prices.condition has percentages missing values 0.0 %
+
+Columns prices.currency has percentages missing values 0.0 %
+
+Columns prices.dateSeen has percentages missing values 0.0 %
+
+Columns prices.isSale has percentages missing values 0.0 %
+
+Columns prices.merchant has percentages missing values 0.0 %
+
+Columns prices.shipping has percentages missing values 40.998758449441304 %
+
+Columns prices.sourceURLs has percentages missing values 0.0 %
+
+Columns asins has percentages missing values 0.0 %
+
+Columns brand has percentages missing values 0.0 %
+
+Columns categories has percentages missing values 0.0 %
+
+Columns dateAdded has percentages missing values 0.0 %
+
+Columns dateUpdated has percentages missing values 0.0 %
+
+Columns ean has   missing values 78.71430542143744 %
+
+Columns imageURLs has percentages missing values 0.0 %
+
+Columns keys has percentages missing values 0.0 %
+
+Columns manufacturer has percentages missing values 55.37315491791971 %
+
+Columns manufacturerNumber has percentages missing values 0.0 %
+
+Columns name has percentages missing values 0.0 %
+
+Columns primaryCategories has percentages missing values 0.0 %
+
+Columns sourceURLs has percentages missing values 0.0 %
+
+Columns upc has percentages missing values 0.0 %
+
+Columns weight has percentages missing values 0.0 %
+
+Columns Unnamed: 26 has percentages missing values 99.46199475789764 %
+
+Columns Unnamed: 27 has percentages missing values 99.75168988826044 %
+
+Columns Unnamed: 28 has percentages missing values 99.91722996275348 %
+
+Columns Unnamed: 29 has percentages missing values 99.83445992550696 %
+
+Columns Unnamed: 30 has percentages missing values 99.91722996275348 %
+
+========== End Pipeline Validation ==========
+========== Start Pipeline Validation ==========
+
+In the data Crypto there are 50 rows and 5 columns
+
+Column number has data type int64
+Column name has data type object
+Column price has data type object
+Column market_cap has data type object
+Column percentage_change_24h has data type object
+
+Columns number has percentages missing values 0.0 %
+
+Columns name has percentages missing values 0.0 %
+
+Columns price has percentages missing values 0.0 %
+
+Columns market_cap has percentages missing values 0.0 %
+
+Columns percentage_change_24h has percentages missing values 0.0 %
+
+========== End Pipeline Validation ==========
