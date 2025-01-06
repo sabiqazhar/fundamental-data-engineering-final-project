@@ -1,5 +1,6 @@
 import pandas as pd
 import luigi
+import math
 
 from datetime import  datetime
 from helper.connection import Connection
@@ -89,15 +90,41 @@ class ValidationData(luigi.Task):
     def output(self):
         pass
 
-# class TransformSalesData(luigi.Task):
-#     def requires(self):
-#         pass
-#
-#     def run(self):
-#         pass
-#
-#     def output(self):
-#         pass
+class TransformSalesData(luigi.Task):
+    def requires(self):
+        return ExtractSalesData()
+
+    def run(self):
+        sales_data = pd.read_csv(self.input().path)
+
+        # deleted unused column
+        unused_cols = "Unnamed: 0"
+        sales_data = sales_data.drop(unused_cols, axis=1)
+
+        # transform data
+        sales_data['ratings'] = pd.to_numeric(sales_data['ratings'], errors='coerce')
+        sales_data["ratings"] = sales_data["ratings"].fillna(sales_data["ratings"].mean())
+        sales_data['ratings'] = sales_data['ratings'].apply(lambda x: math.ceil(x) if pd.notnull(x) else x)
+
+        sales_data['no_of_ratings'] = pd.to_numeric(sales_data['no_of_ratings'], errors='coerce')
+        sales_data["no_of_ratings"] = sales_data["no_of_ratings"].fillna(sales_data["no_of_ratings"].mean())
+        sales_data['no_of_ratings'] = sales_data['no_of_ratings'].apply(lambda x: math.ceil(x) if pd.notnull(x) else x)
+
+        sales_data['discount_price'] = sales_data['discount_price'].str.replace('₹', '').str.strip()
+        sales_data['discount_price'] = pd.to_numeric(sales_data['discount_price'], errors='coerce')
+        sales_data["discount_price"] = sales_data["discount_price"].fillna(sales_data["discount_price"].mean())
+        sales_data['discount_price'] = sales_data['discount_price'].apply(lambda x: math.ceil(x) if pd.notnull(x) else x)
+
+        sales_data['actual_price'] = sales_data['actual_price'].str.replace('₹', '').str.replace(',', '').str.strip()
+        sales_data['actual_price'] = pd.to_numeric(sales_data['actual_price'], errors='coerce')
+        sales_data["actual_price"] = sales_data["actual_price"].fillna(sales_data["actual_price"].median())
+        sales_data['actual_price'] = sales_data['actual_price'].apply(lambda x: math.ceil(x) if pd.notnull(x) else x)
+
+
+    def output(self):
+        return luigi.LocalTarget(
+            f"data/load/transform_sales_data_{today_date}.csv"
+        )
 
 
 class TransformMarketingData(luigi.Task):
@@ -144,15 +171,17 @@ class TransformMarketingData(luigi.Task):
         )
 
 
-# class TransformCryptoData(luigi.Task):
-#     def requires(self):
-#         pass
-#
-#     def run(self):
-#         pass
-#
-#     def output(self):
-#         pass
+class TransformCryptoData(luigi.Task):
+    def requires(self):
+        return ExtractCryptoData()
+
+    def run(self):
+        pass
+
+    def output(self):
+        return luigi.LocalTarget(
+            f"data/load/transform_crypto_data_{today_date}.csv"
+        )
 
 # class LoadData(luigi.Task):
 #     def requires(self):
@@ -168,4 +197,7 @@ if __name__ == '__main__':
     luigi.build([ExtractSalesData(),
                  ExtractMarketingData(),
                  ExtractCryptoData(),
-                 ValidationData()])
+                 ValidationData(),
+                 TransformSalesData(),
+                 TransformMarketingData(),
+                 TransformCryptoData()])
