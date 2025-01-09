@@ -123,7 +123,7 @@ class TransformSalesData(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget(
-            f"data/load/transform_sales_data_{today_date}.csv"
+            f"data/transform/transform_sales_data_{today_date}.csv"
         )
 
 
@@ -167,7 +167,7 @@ class TransformMarketingData(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget(
-            f"data/load/transform_marketing_data_{today_date}.csv"
+            f"data/transform/transform_marketing_data_{today_date}.csv"
         )
 
 
@@ -180,18 +180,43 @@ class TransformCryptoData(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget(
-            f"data/load/transform_crypto_data_{today_date}.csv"
+            f"data/transform/transform_crypto_data_{today_date}.csv"
         )
 
-# class LoadData(luigi.Task):
-#     def requires(self):
-#         pass
-#
-#     def run(self):
-#         pass
-#
-#     def output(self):
-#         pass
+class LoadData(luigi.Task):
+    def requires(self):
+        return [TransformSalesData(),
+                TransformMarketingData(),
+                TransformCryptoData()]
+
+    def run(self):
+        engine = Connection.postgres_engine()
+
+        load_sales_data = pd.read_csv(self.input()[0].path)
+        load_marketing_data = pd.read_csv(self.input()[1].path)
+        load_crypto_data = pd.read_csv(self.input()[2].path)
+
+        sales_data_name = "sales_data"
+        marketing_data_name = "marketing_data"
+        crypto_data_name = "crypto_data"
+
+        load_sales_data.to_sql(name=sales_data_name, con=engine, if_exists="append", index=False)
+        load_marketing_data.to_sql(name=marketing_data_name, con=engine, if_exists="append", index=False)
+        load_crypto_data.to_sql(name=crypto_data_name, con=engine, if_exists="append", index=False)
+
+        load_sales_data.to_csv(self.output()[0].path, index=False)
+        load_marketing_data.to_csv(self.output()[1].path, index=False)
+        load_crypto_data.to_csv(self.output()[2].path, index=False)
+
+
+    def output(self):
+        return [luigi.LocalTarget(
+            f"data/transform/transform_sales_data_{today_date}.csv"
+        ), luigi.LocalTarget(
+            f"data/transform/transform_marketing_data_{today_date}.csv"
+        ), luigi.LocalTarget(
+            f"data/transform/transform_crypto_data_{today_date}.csv"
+        )]
 
 if __name__ == '__main__':
     luigi.build([ExtractSalesData(),

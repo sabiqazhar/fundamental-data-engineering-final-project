@@ -20,7 +20,7 @@ DB_NAME_LOAD = os.getenv("DB_NAME_LOAD")
 
 class Connection:
     @staticmethod
-    def postgres_engine(section):
+    def postgres_engine(section=None):
         """
         create connection with extract credential
         """
